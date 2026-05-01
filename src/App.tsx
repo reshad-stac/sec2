@@ -95,7 +95,7 @@ function LandingPage({
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               >
                 <h1 className="text-2xl md:text-3xl font-extrabold tracking-tighter leading-none italic uppercase whitespace-nowrap">
-                  DIUSEC<span className="text-[10px] align-top not-italic font-normal">®</span>
+                  DIU SEC<span className="text-[10px] align-top not-italic font-normal">®</span>
                 </h1>
               </div>
 
@@ -103,12 +103,17 @@ function LandingPage({
               <div className="flex gap-4 md:gap-8 items-center justify-end">
                 <div className="hidden lg:flex gap-8 items-center">
                   <button 
+                    onClick={() => navigate('/community')} 
+                    className="hover:opacity-50 transition-opacity"
+                  >
+                    COMMUNITY
+                  </button>
+                  <button 
                     onClick={() => navigate('/legends')} 
                     className="hover:opacity-50 transition-opacity"
                   >
                     LEGENDS
                   </button>
-                  <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hover:opacity-50 transition-opacity">INDEX</button>
                   <button onClick={() => {
                     document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
                   }} className="hover:opacity-50 transition-opacity">ABOUT</button>
@@ -202,8 +207,8 @@ function LandingPage({
           {/* Footer */}
           <footer className="relative flex flex-wrap md:flex-nowrap justify-between items-center md:items-end p-4 md:px-10 md:pb-10 text-[10px] md:text-[11px] tracking-[0.2em] font-bold border-t border-black/5 bg-white md:bg-transparent">
             <div className="hidden md:flex gap-16 order-1">
-              <span>©2026 // DHAKA</span>
-              <span className="opacity-40">DIU_SEC_V0.8</span>
+              <span>©2026 // SAVAR</span>
+              <span className="opacity-40">DIU_SEC_DSC_V0.8</span>
             </div>
 
             <div className="flex-1 md:flex-none flex justify-center gap-12 order-3 md:order-2">
@@ -230,10 +235,10 @@ function LandingPage({
             </div>
 
             <div className="flex gap-8 md:gap-16 text-right order-2 md:order-3 w-full md:w-auto mb-4 md:mb-0 justify-between md:justify-end">
-              <span className="md:hidden opacity-40 tracking-normal">DIUSEC_2026</span>
+              <span className="md:hidden opacity-40 tracking-normal">DIU_SEC_2026</span>
               <div className="flex gap-8">
-                <a href="#" className="hover:opacity-50 transition-opacity">DIUSEC</a>
-                <a href="#" className="hover:opacity-50 transition-opacity">SP®</a>
+                <a href="#" className="hover:opacity-50 transition-opacity">SEC</a>
+                <a href="#" className="hover:opacity-50 transition-opacity">DIU®</a>
               </div>
             </div>
           </footer>
@@ -330,7 +335,7 @@ function LandingPage({
                 {[
                   { label: "ESTABLISHED", value: "2024" },
                   { label: "DEPARTMENT", value: "Software Eng." },
-                  { label: "LOCATION", value: "Dhaka, BD" }
+                  { label: "LOCATION", value: "Savar, BD" }
                 ].map((stat, i) => (
                   <div key={i} className="flex justify-between items-end border-b border-white/10 pb-4">
                     <span className="text-[9px] font-mono opacity-40 tracking-widest">{stat.label}</span>
@@ -357,25 +362,113 @@ function LandingPage({
         </div>
       </section>
 
-      {/* Legacy Footer (Modified for full page) */}
-      <footer id="footer" className="relative flex flex-wrap md:flex-nowrap justify-between items-center py-12 px-4 md:px-12 text-[10px] md:text-[11px] tracking-[0.2em] font-bold bg-brand-off-white border-t border-black/5">
-        <div className="flex gap-16">
-          <span>©2026 // DHAKA</span>
-          <span className="opacity-40 hidden md:inline">DIUSEC_LABS_001</span>
+      {/* Enhanced Technical Footer */}
+      <footer id="footer" className="relative bg-brand-off-white pt-24 pb-12 px-6 md:px-12 lg:px-24 border-t border-black/5 overflow-hidden z-20">
+        {/* Background Decorative Elements */}
+        <div className="absolute inset-0 pointer-events-none flex items-center justify-center opacity-[0.02] z-0">
+          <span className="text-[30vw] font-black italic select-none uppercase">DIU SEC</span>
         </div>
-        
-        <div className="text-right">
-          <button 
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} 
-            className="hover:opacity-50 transition-opacity cursor-pointer"
-          >
-            BACK TO TOP ↑
-          </button>
+
+        <div className="max-w-screen-2xl mx-auto relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 mb-24">
+            {/* Brand Column */}
+            <div className="lg:col-span-5 space-y-8">
+              <h1 className="text-4xl md:text-5xl font-black italic tracking-tighter uppercase leading-none">
+                DIU SEC<span className="text-sm align-top not-italic font-bold ml-1">®</span>
+              </h1>
+              <p className="text-sm md:text-base font-medium opacity-60 max-w-sm leading-relaxed">
+                Software Engineering Club of Daffodil International University. 
+                Architecting the next generation of engineers at Daffodil Smart City (DSC).
+              </p>
+              <div className="pt-4 space-y-2 text-[10px] font-bold uppercase tracking-widest opacity-60">
+                <p>Birulia, Savar, Dhaka-1216</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                  <p>HELP: 09617901212</p>
+                  <p>TEL: +8809617901233</p>
+                  <p>FAX: +8802224441835</p>
+                  <p>Email: admission@daffodilvarsity.edu.bd</p>
+                </div>
+              </div>
+              <div className="pt-2">
+                <a 
+                  href="https://maps.app.goo.gl/istRkPfCLxi9WqAn9" 
+                  target="_blank" 
+                  rel="noreferrer"
+                  className="px-8 py-3 bg-brand-black text-white text-[10px] font-black uppercase tracking-widest hover:bg-neutral-800 transition-all rounded-full flex items-center justify-center gap-3 w-fit"
+                >
+                  LOCATION MAP <div className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse" />
+                </a>
+              </div>
+            </div>
+
+            {/* Links Columns */}
+            <div className="lg:col-span-7 grid grid-cols-2 md:grid-cols-3 gap-12">
+              <div className="space-y-6">
+                <span className="text-[10px] font-mono tracking-[0.3em] opacity-40 uppercase font-black">NAVIGATE</span>
+                <ul className="space-y-4 text-xs font-bold uppercase tracking-wider">
+                  <li><button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hover:translate-x-1 transition-transform inline-block">Work Archive</button></li>
+                  <li><button onClick={() => document.getElementById('events')?.scrollIntoView({ behavior: 'smooth' })} className="hover:translate-x-1 transition-transform inline-block">Active Events</button></li>
+                  <li><button onClick={() => document.getElementById('publications')?.scrollIntoView({ behavior: 'smooth' })} className="hover:translate-x-1 transition-transform inline-block">Digital Prints</button></li>
+                  <li><button onClick={() => navigate('/legends')} className="hover:translate-x-1 transition-transform inline-block">Legends</button></li>
+                </ul>
+              </div>
+
+              <div className="space-y-6">
+                <span className="text-[10px] font-mono tracking-[0.3em] opacity-40 uppercase font-black">LEGALS</span>
+                <ul className="space-y-4 text-xs font-bold uppercase tracking-wider">
+                  <li><a href="#" className="hover:translate-x-1 transition-transform inline-block opacity-60 hover:opacity-100">Privacy Policy</a></li>
+                  <li><a href="#" className="hover:translate-x-1 transition-transform inline-block opacity-60 hover:opacity-100">Terms of Service</a></li>
+                  <li><a href="#" className="hover:translate-x-1 transition-transform inline-block opacity-60 hover:opacity-100">Constitution</a></li>
+                  <li><a href="#" className="hover:translate-x-1 transition-transform inline-block opacity-60 hover:opacity-100">Guidelines</a></li>
+                </ul>
+              </div>
+
+              <div className="space-y-6 col-span-2 md:col-span-1">
+                <span className="text-[10px] font-mono tracking-[0.3em] opacity-40 uppercase font-black">SOCIALS</span>
+                <ul className="space-y-4 text-xs font-bold uppercase tracking-wider">
+                  <li><a href="#" className="hover:translate-x-1 transition-transform inline-block underline decoration-black/10 underline-offset-4 decoration-2">Instagram</a></li>
+                  <li><a href="#" className="hover:translate-x-1 transition-transform inline-block underline decoration-black/10 underline-offset-4 decoration-2">Facebook</a></li>
+                  <li><a href="#" className="hover:translate-x-1 transition-transform inline-block underline decoration-black/10 underline-offset-4 decoration-2">LinkedIn</a></li>
+                  <li><a href="#" className="hover:translate-x-1 transition-transform inline-block underline decoration-black/10 underline-offset-4 decoration-2">GitHub Hub</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="pt-12 border-t border-black/5 flex flex-wrap justify-between items-end gap-12">
+            <div className="space-y-4">
+              <div className="flex gap-1">
+                {[1, 2, 3, 4, 5, 6, 7].map(i => <div key={i} className="w-1.5 h-8 bg-black/[0.03]" />)}
+              </div>
+              <div className="space-y-1">
+                <span className="text-[10px] font-bold opacity-30 uppercase tracking-[0.2em]">DAFFODIL_SMART_CITY_SAVAR</span>
+                <p className="text-[11px] font-black uppercase text-black">©2026 SOFTWARE ENGINEERING CLUB // DIU</p>
+              </div>
+            </div>
+
+            <div className="flex flex-col items-end gap-6">
+              <div className="flex gap-8 text-[10px] font-black opacity-30 uppercase">
+                <span>LAT: 23.8759° N</span>
+                <span>LNG: 90.3202° E</span>
+              </div>
+              <button 
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} 
+                className="group flex flex-col items-center gap-2"
+              >
+                <div className="w-px h-12 bg-black/10 group-hover:h-16 transition-all relative overflow-hidden">
+                  <div className="absolute top-0 left-0 w-full h-1/2 bg-black" />
+                </div>
+                <span className="text-[9px] font-black uppercase tracking-[0.3em] opacity-40 group-hover:opacity-100 transition-opacity translate-x-0.5">BACK_TO_ROOT</span>
+              </button>
+            </div>
+          </div>
         </div>
       </footer>
     </>
   );
 }
+
+import { CommunityPage } from './components/CommunityPage';
 
 export default function App() {
   const navigate = useNavigate();
@@ -455,7 +548,7 @@ export default function App() {
                 { label: 'WORK ARCHIVE', ref: 'hero' },
                 { label: 'ACTIVE EVENTS', ref: 'events' },
                 { label: 'DIGITAL PRINTS', ref: 'publications' },
-                { label: 'SYSTEM INDEX', ref: 'hero' },
+                { label: 'COMMUNITY HUB', type: 'link', path: '/community' },
                 { label: 'ABOUT THE CLUB', ref: 'about' },
                 { label: 'CONTACT CHANNEL', ref: 'footer' },
                 { label: 'LEGENDS ARCHIVE', type: 'link', path: '/legends' }
@@ -501,7 +594,7 @@ export default function App() {
                   <p className="text-[10px] font-black uppercase text-white tracking-widest">OPERATIONAL // {time.toLocaleTimeString()}</p>
                 </div>
                 <p className="text-[9px] font-bold text-white/40 max-w-xs uppercase leading-relaxed">
-                  DIU SOFTWARE ENGINEERING CLUB. BUILDING THE NEXT WAVE OF SYSTEM ARCHITECTS.
+                  SOFTWARE ENGINEERING CLUB. BUILDING THE NEXT WAVE OF SYSTEM ARCHITECTS AT DIU.
                 </p>
               </div>
               
@@ -530,6 +623,7 @@ export default function App() {
           />
           <Route path="/wing/:wingId" element={<WingDetail />} />
           <Route path="/register/:eventId" element={<RegisterEvent />} />
+          <Route path="/community" element={<CommunityPage />} />
           <Route path="/legends" element={<LegendsPage />} />
         </Routes>
       </AnimatePresence>

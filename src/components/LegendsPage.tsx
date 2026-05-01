@@ -63,7 +63,7 @@ export const LegendsPage: React.FC = () => {
             transition={{ delay: 0.4 }}
             className="max-w-2xl mx-auto mt-12 text-lg font-medium text-white/40 uppercase italic leading-relaxed"
           >
-            CHRONICLING THE ARCHITECTS OF OUR TECHNICAL DYNASTY. EVERY MEMBER LISTED HERE CONTRIBUTED TO THE GENESIS AND GROWTH OF THE DIU SOFTWARE ENGINEERING CLUB.
+            CHRONICLING THE ARCHITECTS OF OUR TECHNICAL DYNASTY. EVERY MEMBER LISTED HERE CONTRIBUTED TO THE GENESIS AND GROWTH OF THE SOFTWARE ENGINEERING CLUB AT DIU.
           </motion.p>
         </div>
       </header>

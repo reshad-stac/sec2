@@ -155,7 +155,7 @@ export const RegisterEvent: React.FC = () => {
                   <input 
                     required
                     type="email" 
-                    placeholder="NAME.STUDENT@DIU.EDU.BD"
+                    placeholder="NAME.STUDENT@DAFFODILVARSITY.EDU.BD"
                     className="w-full bg-black/[0.04] border-b-2 border-transparent p-4 font-bold uppercase text-sm focus:outline-none focus:border-brand-black transition-all"
                   />
                 </div>
@@ -184,7 +184,7 @@ export const RegisterEvent: React.FC = () => {
                 <div className="flex gap-4 p-6 bg-black/[0.02] border border-black/5 items-start">
                    <div className="w-4 h-4 rounded-full border border-black/20 flex-shrink-0 mt-1" />
                    <p className="text-[9px] font-bold opacity-40 uppercase leading-loose">
-                     BY REGISTERING, YOU ACKNOWLEDGE THE DIU SEC CODE OF CONDUCT. DATA IS HANDLED PER CLUB PRIVACY PROTOCOLS.
+                     BY REGISTERING, YOU ACKNOWLEDGE THE SEC DIU CODE OF CONDUCT. DATA IS HANDLED PER CLUB PRIVACY PROTOCOLS.
                    </p>
                 </div>
               </form>
